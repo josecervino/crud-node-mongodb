@@ -1,6 +1,32 @@
 # crud-node-mongodb
 Learn &amp; build basic CRUD functionality using Node/Express and MongoDB/Mongoose.
 
+## Build status
+
+[![Build Status](https://travis-ci.org/akashnimare/foco.svg?branch=master)](https://travis-ci.org/akashnimare/foco)
+[![Windows Build Status](https://ci.appveyor.com/api/projects/status/github/akashnimare/foco?branch=master&svg=true)](https://ci.appveyor.com/project/akashnimare/foco/branch/master)
+
+## Code style
+
+[![airbnb](https://img.shields.io/badge/code%20style-airbnb-brightgreen.svg?style=flat)](https://github.com/airbnb/javascript)
+
+## Tech/framework used
+<b>Built with</b>
+
+- [Chrome Extension Webpack-React Boilerplate](https://github.com/samuelsimoes/chrome-extension-webpack-boilerplate/tree/react)
+- [React](https://github.com/facebook/react)
+- [Webpacl](https://github.com/webpack)
+- [Babel](https://github.com/babel/babel)
+
+## [REQUIRED] Before starting
+
+1. Install Node on your computer
+  - MacOS/Linux Users:
+  - Windows Users:
+2. Install MongoDB on your computer
+  - MacOS/Linux Users:
+  - Windows Users:
+
 ## What you'll be doing
 
 You'll be going through a relatively straightforward process of setting up a local (meaning on your local computer) Node server, setting up a local (meaning on your local computer) MongoDB database, and implementing basic CRUD routes between the two.
