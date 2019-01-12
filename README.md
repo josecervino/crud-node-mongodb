@@ -20,16 +20,18 @@ Learn &amp; build basic CRUD functionality using Node/Express and MongoDB/Mongoo
 
 ## [REQUIRED] Before starting
 
-1. Install Node on your computer
-  - MacOS/Linux Users:
-
-  - Windows Users:
-
-2. Install MongoDB on your computer
-  - MacOS/Linux Users:
-
-  - Windows Users:
-  
+1. Make sure you have a package manager installed
+  - MacOS: [HomeBrew](https://brew.sh/)
+2. [Install Node on your computer](https://nodejs.org/en/download/package-manager/)
+    ``` brew install node ```
+3. Install MongoDB on your computer
+    **Note:** If any of the above give you a permissions error, run each command with 'sudo' prepended before the command and      then enter in your system credentials.
+    - Run `brew update` on terminal
+    - Run `brew install mongodb`
+    - Create '/data/db' directory: `mkdir -p /data/db`
+    - Run `mongod` to start your mongod process (if you get an error, try `sudo mongod` and then enter in your system credentials).
+    - To run mongo CLI: run `mongo` in terminal
+    - For mongo CLI commands, visit: https://docs.mongodb.com/manual/reference/mongo-shell/
 
 ## What you'll be doing
 
