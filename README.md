@@ -118,6 +118,7 @@ To contribute, please fork the repo, make sure your master and all subsequent br
 
 - [Thank you to this Medium post for the Prettier & ESLint set-up help.](https://blog.echobind.com/integrating-prettier-eslint-airbnb-style-guide-in-vscode-47f07b5d7d6a)
 - [Thanks to this Medium post for being so thorough with its Node/Mongoose intro](https://medium.freecodecamp.org/introduction-to-mongoose-for-mongodb-d2a7aa593c57)
+- [Thanks to FreeCodeCamp for, again, being one of the best sources for beginner/intermediate software engineering info.](https://medium.freecodecamp.org/introduction-to-mongoose-for-mongodb-d2a7aa593c57)
 
 ## License
 
