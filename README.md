@@ -43,47 +43,39 @@ CRUD functionality constitutes about 80% of all application functionality (some 
 
 ## How you'll be doing this
 
-We're going to go through some basic setups for the technologies we'll be using, then we'll create the CRUD funcitonality.
+We're going to go through some basic setups for the technologies we'll be using, then we'll create the CRUD functionality.
 
-[NODE] First things first, lets set up a local Node server:
+### First things first, lets set up a local Node server:
 1. Create a file called ```server.js```
-2. Copy and paste the following code into the file:
-   ```
-   const http = require('http');
+2. Run ```npm i --save express```
+3. Copy and paste the following code into the the file:
+    ```
+    const express = require('express')
+    const app = express()
+    const port = 3000
 
-  const hostname = '127.0.0.1';
-  const port = 3000;
+    app.get('/', (req, res) => res.send('Hello World!'))
 
-  const server = http.createServer((req, res) => {
-    res.statusCode = 200;
-    res.setHeader('Content-Type', 'text/plain');
-    res.end('Hello World\n');
-  });
+    app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+    ```
+  4. Take a moment to understand what's going on here:
+    - We're instantiating the express node module
+    - We create a new application instance (our server)
+    - We declare a constant set to an integer where our application will be hosted
+    - We create a GET route with two arguments:
+      1. '/' is the URL - in this case the initially loaded URL
+      2. (req, res) => is a callback that takes the request and response objects as arguments.
+        - Inside the callback, we call the .send() method on res to quite literally send "Hello World!" as a response.
+      3. We create a listenter that takes our previously defined port constant and a callback as arguments
+  5. Run ```node server.js``` to start the server
+  6. We want a fluid workflow, so lets ```npm i nodemon``` to install a package that, when started, automatically refreshes the application. Add `nodemon server.js` to our package.json under "scripts" and run ```npm start``` in our terminal to see it all in action.
+  7. Right, so now we have a basic Node/Express server set up and ready to roll. There's a ton more we can do with both technologies, but this is a good place to leave off until we come back in the CRUD section.
 
-  server.listen(port, hostname, () => {
-    console.log(`Server running at http://${hostname}:${port}/`);
-  });
-   ```
-  3. Take a moment to look at what's going on here:
-    - ```const http = require('http');``` instantiates the http module of the Node package, allowing us to call methods that allow us to create a server.
-    - ```const port = 3000``` defines a constant to an integer we'll be using to start up our server.
-    - ```const server = ``` gets a constant ready to then assign a server instance to
-    - ```= http.createServer()``` calls the createServer method on the imported http module, where we pass in a callback function as an argument
-    - ```
-      (req, res) => {
-        res.statusCode = 200;
-        res.setHeader('Content-Type', 'text/plain');
-        res.end('Hello World\n');
-      }
-      ```
-      Within the callback function, we populate 
-  4. Run ```node server.js``` and navigate to ```localhost:<PORT # HERE>```
-
-[MongoDB] Great, now lets set up a local mongoDB database:
+### Great, now lets set up a local mongoDB database:
+1. 
 
 
-
-[CRUD] Fantastic, and now for what we came for - CRUD:
+### Fantastic, and now for what we came for - CRUD:
 
 
 
@@ -93,6 +85,8 @@ To contribute, please fork the repo, make sure your master and all subsequent br
 [contributing guideline](https://github.com/zulip/zulip-electron/blob/master/CONTRIBUTING.md)
 
 ## Credits
+- [Thank you to this Medium post for the Prettier & ESLint set-up help.](https://blog.echobind.com/integrating-prettier-eslint-airbnb-style-guide-in-vscode-47f07b5d7d6a)
+- 
 
 ## License
 
