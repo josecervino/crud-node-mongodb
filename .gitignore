@@ -61,5 +61,5 @@ typings/
 .next
 
 # files
-database.js
-server.js
+./database.js
+./server.js
