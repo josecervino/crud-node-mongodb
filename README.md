@@ -15,10 +15,10 @@ Learn &amp; build basic CRUD functionality using Node/Express and MongoDB/Mongoo
 
 <b>Built with</b>
 
-- [Node](https://nodejs.org/en/)
-- [Express](https://expressjs.com/)
-- [MongoDB](https://github.com/mongodb/node-mongodb-native)
-- [Mongoose](https://mongoosejs.com/)
+- [Node](https://nodejs.org/en/) : a server Javascript runtime built on Chrome's V8 Javascript engine. Node lets us run Javascript outside of the browser.
+- [Express](https://expressjs.com/) : a 3rd-party framework that simplifies the Node server creation/management process (and lots more). Express makes server logic minimal & declarative.
+- [MongoDB](https://github.com/mongodb/node-mongodb-native) : a cross-platform document-oriented database program. MongoDB is a noSQL service that is dead simple to set-up & scale - especially for startups & pet-projects that don't need the complexity of a SQL service just yet.
+- [Mongoose](https://mongoosejs.com/) : a 3rd-party [ORM](https://en.wikipedia.org/wiki/Object-relational_mapping) that simplfies MongoDB validation, casting & business logic. Mongoose makes using MongoDB with Node a breeze compared to raw MongoDB.
 
 ## [REQUIRED] Before starting
 
@@ -80,7 +80,7 @@ We're going to go through some basic setups for the technologies we'll be using,
 
 1.
 
-### Fantastic, and now for what we came for - CRUD:
+### Fantastic, and now for what we came here for - CRUD!:
 
 ## Contribute
 
