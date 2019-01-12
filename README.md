@@ -22,10 +22,14 @@ Learn &amp; build basic CRUD functionality using Node/Express and MongoDB/Mongoo
 
 1. Install Node on your computer
   - MacOS/Linux Users:
+
   - Windows Users:
+
 2. Install MongoDB on your computer
   - MacOS/Linux Users:
+
   - Windows Users:
+  
 
 ## What you'll be doing
 
@@ -53,5 +57,17 @@ We're going to go through some basic setups for the technologies we'll be using,
 
 
 
-## Sources
-- 
+## Contribute
+
+To contribute, please fork the repo, make sure your master and all subsequent branches are up to date with this repo, and submit a pull request. I'll get to it as soon as I can.
+[contributing guideline](https://github.com/zulip/zulip-electron/blob/master/CONTRIBUTING.md)
+
+## Credits
+
+-
+
+## License
+
+A short snippet describing the license (MIT, Apache etc)
+
+MIT © [Joe Cervino](https://www.linkedin.com/in/josephcervino/)
