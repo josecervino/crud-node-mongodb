@@ -105,6 +105,8 @@ We're going to go through some basic setups for the technologies we'll be using,
   2. Invoke the .once() method listener that runs once all the while waiting to register the 'open' event, in which case it invokes the provided callback.
 - You may be wondering, "What's the Schema constant for?" well we're about to get to it. But a quick intro: Schemas can be thought of as templates, templates we use to store our data. Schema is an object that, when called with the right arguments, allows us to create entirely new templates for our data! That means we can have a template for emails, messages, files, JSON objects, videos - because MongoDB is a noSQL database, we can essentially create any structure for anything we want and it'll accept it. That's great news when we're only just figuring out what our applications do and what data we need to store and need something flexible that can adapt until we've refined things to the point where a SQL database would be better. On to the next section!
 
+Want to get fancy? Try out the [mLab](https://docs.mlab.com/) service and make a hosted Mongo database for your applicatons!
+
 ### Fantastic, and now for what we came here for - CRUD!:
 
 ## Contribute
