@@ -78,7 +78,32 @@ We're going to go through some basic setups for the technologies we'll be using,
 
 ### Great, now lets set up a local mongoDB database:
 
-1.
+1. Run `npm install mongoose` in your terminal.
+2. Create a file called `database.js`
+3. Copy and paste the following code into the file:
+
+   ```
+   const mongoose = require('mongoose');
+   const Schema = mongoose.Schema;
+
+   mongoose.connect('mongodb://localhost/db');
+
+   const db = mongoose.connection;
+
+   db.on('error', () => console.log('Connection failed!'));
+   db.once('open', () => console.log('Database connected!'))
+   ```
+
+4. Lets take a moment to check out what's going on here:
+
+- We're importing and assigning the newly created instance of Mongoose to a constant
+- We're then accessing the code of the .Schema property on the constant instance (remember, if we don't add parens we're essentially creating a new reference to that property's code) and assigning it to a new constant
+- We then invoke the .call() method on our mongoose instance and pass in a URL where our database is going to be hosted
+- Afterwards, we declare a constant and define it as a reference to the .connection property on our mongoose instance
+- And finally, on that .connection constant, we:
+  1. Invoke the .on() method listener that, when registering an 'error' event, invokes the provided callback
+  2. Invoke the .once() method listener that runs once all the while waiting to register the 'open' event, in which case it invokes the provided callback.
+- You may be wondering, "What's the Schema constant for?" well we're about to get to it. But a quick intro: Schemas can be thought of as templates, templates we use to store our data. Schema is an object that, when called with the right arguments, allows us to create entirely new templates for our data! That means we can have a template for emails, messages, files, JSON objects, videos - because MongoDB is a noSQL database, we can essentially create any structure for anything we want and it'll accept it. That's great news when we're only just figuring out what our applications do and what data we need to store and need something flexible that can adapt until we've refined things to the point where a SQL database would be better. On to the next section!
 
 ### Fantastic, and now for what we came here for - CRUD!:
 
@@ -90,7 +115,7 @@ To contribute, please fork the repo, make sure your master and all subsequent br
 ## Credits
 
 - [Thank you to this Medium post for the Prettier & ESLint set-up help.](https://blog.echobind.com/integrating-prettier-eslint-airbnb-style-guide-in-vscode-47f07b5d7d6a)
--
+- [Thanks to this Medium post for being so thorough with its Node/Mongoose intro](https://medium.freecodecamp.org/introduction-to-mongoose-for-mongodb-d2a7aa593c57)
 
 ## License
 
