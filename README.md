@@ -1,15 +1,9 @@
 # CRUD! with Node/Express & MongoDB/Mongoose
 
-Learn &amp; build basic CRUD functionality using Node/Express and MongoDB/Mongoose.
-
-## Build status
-
 [![Build Status](https://travis-ci.org/akashnimare/foco.svg?branch=master)](https://travis-ci.org/akashnimare/foco)
-[![Windows Build Status](https://ci.appveyor.com/api/projects/status/github/akashnimare/foco?branch=master&svg=true)](https://ci.appveyor.com/project/akashnimare/foco/branch/master)
-
-## Code style
-
 [![airbnb](https://img.shields.io/badge/code%20style-airbnb-brightgreen.svg?style=flat)](https://github.com/airbnb/javascript)
+
+Learn &amp; build basic CRUD functionality using Node/Express and MongoDB/Mongoose.
 
 ## Tech/framework used
 
