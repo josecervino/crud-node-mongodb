@@ -116,11 +116,7 @@ Want to get fancy? Try out the [mLab](https://docs.mlab.com/) service and make a
    })
    ```
 
-3. And now to CREATE data in our Mongo database. Change the copy & pasted code so that it reads as follows:
-
-   ```
-
-   ```
+3. And now to CREATE data in our Mongo database. We'll be working this part out on-site.
 
 #### Read
 
@@ -142,11 +138,7 @@ Want to get fancy? Try out the [mLab](https://docs.mlab.com/) service and make a
 
    There are different ways to read data from Mongo, but this is a good start. Now you understand what a read operation looks like and can use it as a foundation to experiment for your own needs.
 
-4. And now to READ data in our Mongo database. Change the copy & pasted code so that it reads as follows:
-
-   ```
-
-   ```
+4. And now to READ data in our Mongo database. We'll be working this part out on-site.
 
 #### Update
 
@@ -163,11 +155,7 @@ Want to get fancy? Try out the [mLab](https://docs.mlab.com/) service and make a
       res.send(res.data)
    })
    ```
-4. And now to UPDATE data in our Mongo database. Change the copy & pasted code so that it reads as follows:
-
-   ```
-
-   ```
+4. And now to UPDATE data in our Mongo database. We'll be working this part out on-site.
 
 #### Delete
 
@@ -184,11 +172,7 @@ Want to get fancy? Try out the [mLab](https://docs.mlab.com/) service and make a
       res.send('Data deleted.')
    })
    ```
-4. And now to DELETE data in our Mongo database. Change the copy & pasted code so that it reads as follows:
-
-   ```
-
-   ```
+4. And now to DELETE data in our Mongo database. We'll be working this part out on-site.
 
 ## Contribute
 
