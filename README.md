@@ -1,15 +1,9 @@
 # CRUD! with Node/Express & MongoDB/Mongoose
 
-Learn &amp; build basic CRUD functionality using Node/Express and MongoDB/Mongoose.
-
-## Build status
-
 [![Build Status](https://travis-ci.org/akashnimare/foco.svg?branch=master)](https://travis-ci.org/akashnimare/foco)
-[![Windows Build Status](https://ci.appveyor.com/api/projects/status/github/akashnimare/foco?branch=master&svg=true)](https://ci.appveyor.com/project/akashnimare/foco/branch/master)
-
-## Code style
-
 [![airbnb](https://img.shields.io/badge/code%20style-airbnb-brightgreen.svg?style=flat)](https://github.com/airbnb/javascript)
+
+Learn &amp; build basic CRUD functionality using Node/Express and MongoDB/Mongoose.
 
 ## Tech/framework used
 
@@ -91,7 +85,7 @@ We're going to go through some basic setups for the technologies we'll be using,
    const db = mongoose.connection;
 
    db.on('error', () => console.log('Connection failed!'));
-   db.once('open', () => console.log('Database connected!'))
+   db.once('open', () => console.log('Database connected!'));
    ```
 
 4. Lets take a moment to check out what's going on here:
@@ -109,6 +103,77 @@ Want to get fancy? Try out the [mLab](https://docs.mlab.com/) service and make a
 
 ### Fantastic, and now for what we came here for - CRUD!:
 
+![CRUD](https://zellwk.com/images/2016/01/crud-express-mongo.png)
+
+#### Create
+
+1. In Express, we use `app.post(path, callback)` to perform a CREATE operation.
+2. So to add a CREATE operation to our server, copy and paste the following into server.js:
+
+   ```
+   app.post('/quotes', (req, res) => {
+      res.send(res.data)
+   })
+   ```
+
+3. And now to CREATE data in our Mongo database. We'll be working this part out on-site.
+
+#### Read
+
+1. In Express, we use `app.get(path, callback)` to perform a READ operation.
+2. So to add a READ operation to our server, copy and paste the following into server.js:
+   ```
+   app.get('/', (req,res) => {
+      res.send('GET Works!');
+   })
+   ```
+   I know what you're thinking, we just copy and pasted code that's almost identical to our original server start-up code. There's a reason for that. Sometimes code can feel esoteric, as if every new thing is completely different from the past, but REALLY things are EXPANSIONS of past concepts and have a logical connection pushing them forward. More on that in a moment.
+3. And now to READ data from our Mongo database. Change the copy & pasted code so that it reads as follows:
+
+   ```
+   app.get('/messages', (req,res) => {
+      res.send(res.data);
+   })
+   ```
+
+   There are different ways to read data from Mongo, but this is a good start. Now you understand what a read operation looks like and can use it as a foundation to experiment for your own needs.
+
+4. And now to READ data in our Mongo database. We'll be working this part out on-site.
+
+#### Update
+
+1. In Express, we use `app.put(path, callback)` to perform an UPDATE operation.
+2. So to add an UPDATE operation to our server, copy and paste the following into server.js:
+   ```
+   app.set('/', (req,res) => {
+      res.send('SET Works!');
+   })
+   ```
+3. And now to UPDATE data from our Mongo database. Change the copy & pasted code so that it reads as follows:
+   ```
+   app.set('/', (req, res) => {
+      res.send(res.data)
+   })
+   ```
+4. And now to UPDATE data in our Mongo database. We'll be working this part out on-site.
+
+#### Delete
+
+1. In Express, we use `app.delete(path, callback)` to perform a DELETE operation.
+2. So to add an DELETE operation to our server, copy and paste the following into server.js:
+   ```
+   app.set('/', (req,res) => {
+      res.send('DELETE Works!');
+   })
+   ```
+3. And now to UPDATE data from our Mongo database. Change the copy & pasted code so that it reads as follows:
+   ```
+   app.delete('/', (req, res) => {
+      res.send('Data deleted.')
+   })
+   ```
+4. And now to DELETE data in our Mongo database. We'll be working this part out on-site.
+
 ## Contribute
 
 To contribute, please fork the repo, make sure your master and all subsequent branches are up to date with this repo, and submit a pull request with your changes. I'll get to it as soon as I can.
@@ -119,6 +184,7 @@ To contribute, please fork the repo, make sure your master and all subsequent br
 - [Thank you to this Medium post for the Prettier & ESLint set-up help.](https://blog.echobind.com/integrating-prettier-eslint-airbnb-style-guide-in-vscode-47f07b5d7d6a)
 - [Thanks to this Medium post for being so thorough with its Node/Mongoose intro](https://medium.freecodecamp.org/introduction-to-mongoose-for-mongodb-d2a7aa593c57)
 - [Thanks to FreeCodeCamp for, again, being one of the best sources for beginner/intermediate software engineering info.](https://medium.freecodecamp.org/introduction-to-mongoose-for-mongodb-d2a7aa593c57)
+- [Thanks to this article for reminding me about the right CRUD Express routes](https://dev.to/ichtrojan/basic-routing-http-requests-and-crud-operation-with-express-and-mongodb-od2)
 
 ## License
 
