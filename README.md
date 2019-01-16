@@ -48,13 +48,13 @@ We're going to go through some basic setups for the technologies we'll be using,
 3. Copy and paste the following code into the the file:
 
    ```
-   const express = require('express')
-   const app = express()
-   const port = 3000
+   const express = require('express');
+   const app = express();
+   const port = 3000;
 
-   app.get('/', (req, res) => res.send('Hello World!'))
+   app.get('/', (req, res) => res.send('Hello World!'));
 
-   app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+   app.listen(port, () => console.log(`Example app listening on port ${port}!`));
    ```
 
 4. Take a moment to understand what's going on here:
@@ -65,7 +65,7 @@ We're going to go through some basic setups for the technologies we'll be using,
      1. '/' is the URL - in this case the initially loaded URL
      2. (req, res) => is a callback that takes the request and response objects as arguments.
         - Inside the callback, we call the .send() method on res to quite literally send "Hello World!" as a response.
-     3. We create a listenter that takes our previously defined port constant and a callback as arguments
+     3. We create a listener that takes our previously defined port constant and a callback as arguments
 5. Run `node server.js` to start the server
 6. We want a fluid workflow, so lets `npm i nodemon` to install a package that, when started, automatically refreshes the application. Add `nodemon server.js` to our package.json under "scripts" and run `npm start` in our terminal to see it all in action.
 7. Right, so now we have a basic Node/Express server set up and ready to roll. There's a ton more we can do with both technologies, but this is a good place to leave off until we come back to explore some of it in more detail in the CRUD section.
